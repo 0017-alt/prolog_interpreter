@@ -1,0 +1,17 @@
+type token =
+    SID of string
+  | RPAR
+  | QUESTION
+  | LPAR
+  | LID of string
+  | DOT
+  | DEF
+  | COMMA
+val menhir_begin_marker : int
+val xv_var : string
+val xv_toplevel : Syntax.command
+val xv_expr3 : Syntax.expr
+val xv_expr2 : Syntax.expr
+val xv_expr1 : Syntax.expr
+val xv_const : string
+val menhir_end_marker : int
